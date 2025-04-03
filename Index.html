@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.T. Sons Roofing Dublin - 3 Generations of Roofing Excellence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-color: #1a3a6d;
+            --secondary-color: #e8491d;
+            --light-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('roofing-hero.jpg') center/cover;
+            color: white;
+            padding: 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Generations Section */
+        .generations {
+            padding: 4rem 2rem;
+            background: var(--light-color);
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .era-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 2rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* CTA Styles */
+        .cta {
+            background: var(--secondary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            background: var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .timeline {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="B.T. Sons Roofing" class="logo">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1>3 Generations of Roofing Excellence</h1>
+            <p>Family-owned & operated since 1965</p>
+            <a href="#contact" class="cta-button">Get Your Free Estimate</a>
+        </div>
+    </header>
+
+    <section class="generations" id="about">
+        <h2>Our Legacy in Roofing</h2>
+        <div class="timeline">
+            <div class="era-card">
+                <h3>1965-1990</h3>
+                <p>Grandfather Brian Thompson establishes the company with traditional craftsmanship</p>
+            </div>
+            <div class="era-card">
+                <h3>1990-2010</h3>
+                <p>Father-son partnership brings modern roofing techniques</p>
+            </div>
+            <div class="era-card">
+                <h3>2010-Present</h3>
+                <p>Third generation combines heritage skills with cutting-edge technology</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Roofing Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-home fa-3x"></i>
+                <h4>Residential Roofing</h4>
+                <p>Complete roof installations and repairs</p>
+            </div>
+            <!-- Add more service cards -->
+        </div>
+    </section>
+
+    <section class="cta">
+        <h3>Ready to Protect Your Home?</h3>
+        <a href="tel:+3531234567" class="cta-button">Call Now +353 123 4567</a>
+    </section>
+
+    <div class="social-proof">
+        <a href="https://btsonsroofingdublin.ie/" class="button">Visit Our Main Site</a>
+        <a href="https://m.facebook.com/btsonsroofingdublin/" class="button">
+            <i class="fab fa-facebook"></i> Follow Us
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2024 B.T. Sons Roofing Dublin - Serving Dublin for 3 Generations</p>
+        <address>123 Roofing Street, Dublin, Ireland</address>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
